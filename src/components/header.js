@@ -38,6 +38,9 @@ const Header = (title, date, temp) => {
   //  </div>
   //
 }
+function htmlTest(str) {
+  return str;
+}
 
 
 const headerAppender = (selector) => {
