@@ -1,4 +1,27 @@
+const headerDiv = document.querySelector("header");
+console.log(headerDiv);
+
 const Header = (title, date, temp) => {
+
+//lables//
+const header = document.createElement("div")
+  const dateSpan = document.createElement("span");
+  const headerH1 = document.createElement("h1");
+  const headerTemp = document.createElement("span")
+
+  //heirarchy//
+
+  headerDiv.appendChild(header);
+  header.appendChild(dateSpan);
+  header.appendChild(headerH1);
+  header.appendChild(headerTemp);
+
+  header.classList.add("header");
+  dateSpan.classList.add("date");
+  headerTemp.classList.add("temp");
+  return header;
+
+
   // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.

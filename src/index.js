@@ -7,7 +7,6 @@ import { worker } from './mocks/browser'
 import { cardAppender } from './components/card'
 import { tabsAppender } from './components/tabs'
 import { headerAppender } from './components/header'
-
 worker.start()
 
 headerAppender('.header-container')
