@@ -18,6 +18,10 @@ const Header = (title, date, temp) => {
   header.classList.add("header");
   dateSpan.classList.add("date");
   headerTemp.classList.add("temp");
+
+  dateSpan.textContent = date;
+  headerH1.textContent = title;
+  headerTemp.textContent = temp;
   return header;
 
 
@@ -37,6 +41,7 @@ const Header = (title, date, temp) => {
 
 
 const headerAppender = (selector) => {
+  selector.textContent = ("");
   // TASK 2
   // ---------------------
   // Implement this function taking a css selector as its only argument.
@@ -44,5 +49,5 @@ const headerAppender = (selector) => {
   // It should append the header to the element in the DOM that matches the given selector.
   //
 }
-console.log(Header("bone", "be", "gone"));
+console.log(Header("Lambda Times", "January 6, 2021", "26"));
 export { Header, headerAppender }

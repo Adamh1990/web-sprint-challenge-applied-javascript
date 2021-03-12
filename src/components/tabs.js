@@ -1,4 +1,21 @@
+import { Header } from "./header"
+const headerDiv = document.querySelector(".header");
 const Tabs = (topics) => {
+  const someTopics = document.createElement("div");
+  const tab1 = document.createElement("div");
+  const tab2 = document.createElement("div");
+  const tab3 = document.createElement("div");
+
+  someTopics.classList.add("topics");
+  tab1.classList.add("tab");
+  tab2.classList.add("tab");
+  tab3.classList.add("tab");
+
+
+  headerDiv.appendChild(someTopics);
+  someTopics.appendChild(tab1);
+  someTopics.appendChild(tab2);
+  someTopics.appendChild(tab3);
   // TASK 3
   // ---------------------
   // Implement this function which takes an array of strings ("topics") as its only argument.
@@ -13,7 +30,9 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
+  return someTopics;
 }
+console.log(Tabs("test"));
 
 const tabsAppender = (selector) => {
   // TASK 4
