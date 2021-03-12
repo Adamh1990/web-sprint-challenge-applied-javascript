@@ -1,10 +1,9 @@
-const headerDiv = document.querySelector("header");
-console.log(headerDiv);
+const headerDiv = document.querySelector(".header");
 
 const Header = (title, date, temp) => {
 
 //lables//
-const header = document.createElement("div")
+  const header = document.createElement("div")
   const dateSpan = document.createElement("span");
   const headerH1 = document.createElement("h1");
   const headerTemp = document.createElement("span")
@@ -35,6 +34,7 @@ const header = document.createElement("div")
   //  </div>
   //
 }
+console.log(Header("bone", "be", "gone"));
 
 const headerAppender = (selector) => {
   // TASK 2
