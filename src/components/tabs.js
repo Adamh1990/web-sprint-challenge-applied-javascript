@@ -1,5 +1,6 @@
 import { Header } from "./header"
-const headerDiv = document.querySelector(".header");
+const headerDiv2 = document.querySelector(".header2");
+
 const Tabs = (topics) => {
   const someTopics = document.createElement("div");
   const tab1 = document.createElement("div");
@@ -12,10 +13,12 @@ const Tabs = (topics) => {
   tab3.classList.add("tab");
 
 
-  headerDiv.appendChild(someTopics);
+  headerDiv2.appendChild(someTopics);
   someTopics.appendChild(tab1);
   someTopics.appendChild(tab2);
   someTopics.appendChild(tab3);
+
+
   // TASK 3
   // ---------------------
   // Implement this function which takes an array of strings ("topics") as its only argument.
@@ -32,7 +35,7 @@ const Tabs = (topics) => {
   //
   return someTopics;
 }
-console.log(Tabs("test"));
+console.log(Tabs("bootstrap", "javascript", "technology"));
 
 const tabsAppender = (selector) => {
   // TASK 4
