@@ -1,11 +1,15 @@
-import { Header } from "./header"
-const headerDiv2 = document.querySelector(".header2");
+const tabDiv = document.querySelector(".tabs-container");
 
 const Tabs = (topics) => {
+
+  //labels//
+
   const someTopics = document.createElement("div");
   const tab1 = document.createElement("div");
   const tab2 = document.createElement("div");
   const tab3 = document.createElement("div");
+
+  //heirarchy// 
 
   someTopics.classList.add("topics");
   tab1.classList.add("tab");
@@ -13,10 +17,16 @@ const Tabs = (topics) => {
   tab3.classList.add("tab");
 
 
-  headerDiv2.appendChild(someTopics);
+  tabDiv.appendChild(someTopics);
   someTopics.appendChild(tab1);
   someTopics.appendChild(tab2);
   someTopics.appendChild(tab3);
+
+const tops = topics.split(',');
+tab1.textContent = tops[0];
+tab2.textContent = tops[1];
+tab3.textContent = tops[2];
+  
 
 
   // TASK 3
@@ -33,14 +43,10 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
-//   return someTopics;
-// }
-// console.log(Tabs("bootstrap", "javascript", "technology"));
-
-function htmlTest(str) {
-  return str;
+  return someTopics;
 }
-console.log(htmlTest("it's working"));
+console.log(Tabs('javascript', 'bootstrap', 'technology'));
+
 
 const tabsAppender = (selector) => {
   // TASK 4
@@ -53,3 +59,4 @@ const tabsAppender = (selector) => {
 }
 
 export { Tabs, tabsAppender }
+
