@@ -1,4 +1,4 @@
-const headerDiv = document.querySelector(".header");
+const headerDiv = document.querySelector(".headers");
 
 const Header = (title, date, temp) => {
 
@@ -38,13 +38,11 @@ const Header = (title, date, temp) => {
   //  </div>
   //
 }
-function htmlTest(str) {
-  return str;
-}
+
 
 
 const headerAppender = (selector) => {
-  selector.textContent = ("");
+  // selector.textContent = ("");
   // TASK 2
   // ---------------------
   // Implement this function taking a css selector as its only argument.

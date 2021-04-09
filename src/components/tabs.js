@@ -33,9 +33,14 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
-  return someTopics;
+//   return someTopics;
+// }
+// console.log(Tabs("bootstrap", "javascript", "technology"));
+
+function htmlTest(str) {
+  return str;
 }
-console.log(Tabs("bootstrap", "javascript", "technology"));
+console.log(htmlTest("it's working"));
 
 const tabsAppender = (selector) => {
   // TASK 4
