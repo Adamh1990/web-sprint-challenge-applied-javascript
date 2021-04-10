@@ -22,10 +22,14 @@ const Tabs = (topics) => {
   someTopics.appendChild(tab2);
   someTopics.appendChild(tab3);
 
-const tops = topics.split(',');
-tab1.textContent = tops[0];
-tab2.textContent = tops[1];
-tab3.textContent = tops[2];
+  function splitTopics() {
+    const split = topics.split(',');
+    return split;
+
+  }
+tab1.textContent = splitTopics(topics)[0];
+tab2.textContent = splitTopics(topics)[1];
+tab3.textContent = splitTopics(topics)[2];
   
 
 
@@ -45,7 +49,7 @@ tab3.textContent = tops[2];
   //
   return someTopics;
 }
-console.log(Tabs('javascript', 'bootstrap', 'technology'));
+console.log(Tabs('javascript, bootstrap, technology'))
 
 
 const tabsAppender = (selector) => {
